@@ -109,12 +109,12 @@ def getSpells(productUrl):
 		wbWrtr = xlwt.Workbook(fileName)
 		sheet = wb.sheet_by_index(1)
 		row = str(takenSpells.index(i)+2)
-		#zip together as dict, use with dir(takenSpells[2])
 		colsUsed = ['B','C','D','E','F','G','H']
 		colNames = ['lvl', 'school', 'castTime', 'range_', 'components', 'duration', 'desc']
 		destinations = dict(zip(colNames,colsUsed))
 		for n in colNames:
 			#destinations[str(n)]+row
+			#FOLLOWING LINE IS PRIORITY TO_DO
 			#i.n doesn't get passed around right
 	
 	
