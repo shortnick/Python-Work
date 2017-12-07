@@ -6,7 +6,7 @@ import csv, bs4, requests, sys, re
 sys.stdout = open(1, 'w', encoding='utf-8', closefd=False); 
 
 spells = [] #basis of search/scrape, pulled from spreadsheet
-fileName = r'C:\Users\user\Documents\Warlock Spells.xls' # the spreadsheet
+fileName = r'C:\Users\user\Documents\xxxxxxx.xls' # the spreadsheet
 ends=[] # will be website subaddress of spell page
 spelladdy= []# will contain actual webaddresses of spells
 takenSpells = [] # spellObj place holder

@@ -5,7 +5,7 @@ import xlrd, bs4, requests, sys, re
 sys.stdout = open(1, 'w', encoding='utf-8', closefd=False); 
 
 spells = []
-fileName = r'C:\Users\user\Documents\Warlock Spells.xls'
+fileName = r'C:\Users\user\Documents\xxxxxxxxxx.xls'
 wb = xlrd.open_workbook(fileName)
 #bob = wb.sheet_names()
 #print(wb)
