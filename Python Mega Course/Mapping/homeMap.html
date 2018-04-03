@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_6252555e2ea04e38bd37c768c3afe692 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6252555e2ea04e38bd37c768c3afe692" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_6252555e2ea04e38bd37c768c3afe692 = L.map(
+                                  'map_6252555e2ea04e38bd37c768c3afe692',
+                                  {center: [47.60621,-122.33207],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_45f62e50a32c4848a7211613eef1e4c8 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_6252555e2ea04e38bd37c768c3afe692);
+        
+    
+
+            var marker_0f8eb82aba2a4fb3809fff977e589f81 = L.marker(
+                [47.614851,-122.346965],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_6252555e2ea04e38bd37c768c3afe692);
+            
+    
+
+                var icon_a045031ef25b4b2d94f33732b82d5dde = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f8eb82aba2a4fb3809fff977e589f81.setIcon(icon_a045031ef25b4b2d94f33732b82d5dde);
+            
+    
+            var popup_cbe66047cf364c6fb6a4e74b929822d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_e181d90e38d74376b5f0231c202ecd87 = $('<div id="html_e181d90e38d74376b5f0231c202ecd87" style="width: 100.0%; height: 100.0%;">Living in Seattle</div>')[0];
+                popup_cbe66047cf364c6fb6a4e74b929822d2.setContent(html_e181d90e38d74376b5f0231c202ecd87);
+            
+
+            marker_0f8eb82aba2a4fb3809fff977e589f81.bindPopup(popup_cbe66047cf364c6fb6a4e74b929822d2);
+
+            
+        
+    
+
+            var marker_c4d7b070102546bc87680c70a8f3d807 = L.marker(
+                [47.590428,-122.312433],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_6252555e2ea04e38bd37c768c3afe692);
+            
+    
+
+                var icon_5fc7df3883dc43969505f7ab75e0b4df = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4d7b070102546bc87680c70a8f3d807.setIcon(icon_5fc7df3883dc43969505f7ab75e0b4df);
+            
+    
+            var popup_a1c94cb98322401da3d0e9f374c922c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_18989635640d4af8a7c096afdee51149 = $('<div id="html_18989635640d4af8a7c096afdee51149" style="width: 100.0%; height: 100.0%;">Living in Seattle</div>')[0];
+                popup_a1c94cb98322401da3d0e9f374c922c4.setContent(html_18989635640d4af8a7c096afdee51149);
+            
+
+            marker_c4d7b070102546bc87680c70a8f3d807.bindPopup(popup_a1c94cb98322401da3d0e9f374c922c4);
+
+            
+        
+    
+
+            var marker_65f08f60dae2426cb2761f4a8f9d215b = L.marker(
+                [47.670215,-122.321063],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_6252555e2ea04e38bd37c768c3afe692);
+            
+    
+
+                var icon_ef43384ef81a4240a136034c93c6805a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_65f08f60dae2426cb2761f4a8f9d215b.setIcon(icon_ef43384ef81a4240a136034c93c6805a);
+            
+    
+            var popup_10d05c3c38b34e34a36f0a1419913174 = L.popup({maxWidth: '300'});
+
+            
+                var html_789cfdb5599743ce9e34d103335248b1 = $('<div id="html_789cfdb5599743ce9e34d103335248b1" style="width: 100.0%; height: 100.0%;">Living in Seattle</div>')[0];
+                popup_10d05c3c38b34e34a36f0a1419913174.setContent(html_789cfdb5599743ce9e34d103335248b1);
+            
+
+            marker_65f08f60dae2426cb2761f4a8f9d215b.bindPopup(popup_10d05c3c38b34e34a36f0a1419913174);
+
+            
+        
+</script>

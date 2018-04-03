@@ -7,11 +7,19 @@ data = json.load(open("DictData.json"))
 
 def translate(word):
     if word.isalpha() != True:
-        return "This is not a word written using letters."
+        print("This is not a word written using letters.")
+
     else:
         word = word.lower()
         if word in data:
-            output= data[word]
+            print(word)
+            print(data[word])
+        elif word.title() in data:
+            print(word.title())
+            print(data[word.title()])
+        elif word.upper() in data:
+            print(word.upper())
+            print(data[word.upper()])
         elif len(get_close_matches(word, data.keys(), n=4)) > 0:
             trys = (get_close_matches(word, data.keys(), n=4))
             print("The best match is %s." % get_close_matches(word, data.keys())[0])
